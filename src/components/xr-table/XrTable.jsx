@@ -11,7 +11,10 @@ const XrTable = () => {
 
   return (
     < >
+      {
+        !isPresenting &&
       <OrbitControls minDistance={0.5} minZoom={0.1}/>
+      }
       <Stage environment="night" intensity={0.1} castShadow={false}>
       <Model />
   
