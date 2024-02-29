@@ -78,7 +78,7 @@ export function Model(props) {
 
 
   return (
-    <group scale={0.84} position={isPresenting ? [0,-0.38,-4.2] : [0,-0.38,0]} rotation={[Math.PI/5,0,0]} {...props} dispose={null}>
+    <group scale={0.84} position={isPresenting ? [0,0,-4.2] : [0,-0.38,0]} rotation={isPresenting ? [0,0,0] : [Math.PI/5,0,0]} {...props} dispose={null}>
       <mesh geometry={nodes['Furniture_Tables_Lundbergs-Mobler_Table-Stay-XL005_1'].geometry} material={materials['Plywood sides']} />
       <mesh geometry={nodes['Furniture_Tables_Lundbergs-Mobler_Table-Stay-XL005_2'].geometry} >
       <meshPhysicalMaterial 
