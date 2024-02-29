@@ -34,17 +34,19 @@ const XrTable = () => {
       <OrbitControls minDistance={0.5} minZoom={0.1}/>
       <Stage environment="night" intensity={0.1} castShadow={false}>
       {!isPresenting && <Model />}
-      {isPresenting && <Model position={table} />
+      {isPresenting && <Model 
+      // position={table} 
+      />
       }
 
-        {isPresenting && (
+        {/* {isPresenting && (
         <Interactive onSelect={placeTable}>
           <mesh ref={reticleRef} rotation-x={-Math.PI / 2}>
             <ringGeometry scale={2} args={[0.1, 0.25, 32]} />
             <meshStandardMaterial color={"white"} />
           </mesh>
         </Interactive>
-      )}
+      )} */}
 
       </Stage>
     </>
