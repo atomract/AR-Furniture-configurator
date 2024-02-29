@@ -13,9 +13,9 @@ const XrTableContainer = () => {
       <div className="App">
 
       <ARButton
-           sessionInit={{
-            requiredFeatures: ["hit-test"],
-          }}
+          //  sessionInit={{
+          //   requiredFeatures: ["hit-test"],
+          // }}
       />
       <Canvas camera={{fov: 45, position: [0,0.00005,0.0025]}}>
           <color attach="background" args={["#313747"]} />
